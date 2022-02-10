@@ -1,4 +1,4 @@
-set(SOURCE src/main.c src/main.c)
+set(SOURCE src/main.c src/menu.h src/menu.c)
 set(PROJECT_NAME project)
 
 cmake_minimum_required(VERSION 3.12)
@@ -23,6 +23,5 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 ${SDL2_FLAGS}")
 
 file(GLOB_RECURSE SOURCE "src/*.c" "src/*.h")
 add_executable("${PROJECT_NAME}" "${SOURCE}")
-
 include_directories(${SDL2_INCLUDE_DIR} ${SDL2_GFX_INCLUDE_DIR})
 target_link_libraries(${PROJECT_NAME} ${SDL2_LIBS})
