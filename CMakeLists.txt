@@ -1,4 +1,4 @@
-set(SOURCE src/main.c src/menu.h src/menu.c)
+set(SOURCE src/main.c src/menu.h src/menu.c src/Map.h src/Map.c src/potion.c src/potion.h)
 set(PROJECT_NAME project)
 
 cmake_minimum_required(VERSION 3.12)
