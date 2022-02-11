@@ -517,8 +517,8 @@ void menu(SDL_Renderer* sdlRenderer,int* flaaaaag,int* hhh,char text_name[]) {
         SDL_RenderClear(sdlRenderer);
         SDL_SetRenderDrawColor(sdlRenderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
         SDL_Rect rect;
-        rect.x = 315;
-        rect.y = 310;
+        rect.x = 200;
+        rect.y = 200;
         rect.h = 20;
         rect.w = 150;
         SDL_RenderDrawRect(sdlRenderer, &rect);
@@ -530,16 +530,17 @@ void menu(SDL_Renderer* sdlRenderer,int* flaaaaag,int* hhh,char text_name[]) {
         leaderboard.w = 120;
         SDL_RenderDrawRect(sdlRenderer, &leaderboard);
         SDL_RenderFillRect(sdlRenderer, &leaderboard);
-        stringRGBA(sdlRenderer, 200, 400, "Leaderboards", 0, 0, 0, SDL_ALPHA_OPAQUE);
+        stringRGBA(sdlRenderer, 210, 405, "Leaderboards", 0, 0, 0, SDL_ALPHA_OPAQUE);
         SDL_Rect rectt;
         rectt.x = 400;
         rectt.y = 400;
         rectt.h = 20;
         rectt.w = 80;
         SDL_RenderDrawRect(sdlRenderer, &rectt);
-        stringRGBA(sdlRenderer, 320, 320, text_name, 255, 0, 0, SDL_ALPHA_OPAQUE);
+        stringRGBA(sdlRenderer,160,160,"Enter UserName:",255,0,0,SDL_ALPHA_OPAQUE);
+        stringRGBA(sdlRenderer, 210, 210, text_name, 255, 0, 0, SDL_ALPHA_OPAQUE);
         SDL_RenderFillRect(sdlRenderer, &rectt);
-        stringRGBA(sdlRenderer, 400, 400, "PLAY!", 0, 0, 0, SDL_ALPHA_OPAQUE);
+        stringRGBA(sdlRenderer, 420, 410, "PLAY!", 0, 0, 0, SDL_ALPHA_OPAQUE);
         if (mousee_x >= 400 && mousee_x <= 480 && mousee_y >= 400 && mousee_y <= 420) {
             mousee_x = 0;
             mousee_y = 0;

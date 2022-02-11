@@ -270,7 +270,7 @@ int main(){
                         soldiers[i].green = 255;
                         soldiers[i].blue = 0;
                     }
-                    
+
                     for (int i = 0;i<soldiers_number2;i++){
                         soldiers_enemy[i].red = 0;
                         soldiers_enemy[i].green = 255;
